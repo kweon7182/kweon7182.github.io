@@ -16,7 +16,8 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Publications
 ======
-1. [A Bound on the Torsion Subgroups of Néron-Severi Groups](https://arxiv.org/abs/1902.02753); preprint (To be appeared in Transactions of the AMS)
+1. [Bounds on the Torsion Subgroup Schemes of Néron-Severi Group Schemes](https://arxiv.org/abs/2008.01908); preprint
+1. [Bounds on the Torsion Subgroups of Néron-Severi Groups](https://arxiv.org/abs/1902.02753); preprint (To be appeared in Transactions of the AMS)
 1. [Overlap of convex polytopes under rigid motion](https://www.sciencedirect.com/science/article/pii/S0925772113000941) (with Hee-Kap Ahn; Siu-Wing Cheng and Juyoung Yon). 
 Comput. Geom. 47 (2014), no. 1, 15–24. 52B55 (52B11)
 
