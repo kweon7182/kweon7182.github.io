@@ -13,7 +13,7 @@ redirect_from:
 </p>
 
 # About Me
-I am a fifth year Ph.D. student in the Department of Mathematics at MIT, advised by Bjorn Poonen. My interests lie in algebraic geometry and number theory.
+I am a fifth year Ph.D. student in the Department of Mathematics at MIT, advised by [Bjorn Poonen](http://www-math.mit.edu/~poonen/). My interests lie in algebraic geometry and number theory.
 
 # Publications
 1. [Bounds on the Torsion Subgroup Schemes of Néron-Severi Group Schemes](https://arxiv.org/abs/2008.01908); preprint
