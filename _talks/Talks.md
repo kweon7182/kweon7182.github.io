@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 # Research Talks
-Bounds on the Torsion Subgroups of Néron-Severi Group Schemes, KIAS, Jan. 2020  
+Bounds on the Torsion Subgroups of Néron-Severi Groups, KIAS, Jan. 2020  
 
 # Expository Talks
 Formal Groups as Functors, STAGE, MIT, Sep. 2019  
