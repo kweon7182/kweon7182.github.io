@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 # Research Talks
-***Bounds on the Torsion Subgroups of Néron-Severi Groups**  
+***Bounds on the Torsion Subgroups of Néron-Severi Groups***  
 KIAS, Jan. 2020  
 
 # Expository Talks
