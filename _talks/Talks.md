@@ -10,7 +10,7 @@ author_profile: true
 KIAS, Jan. 2020  
 
 # Expository Talks
-***Formal Groups as Functors***
+***Formal Groups as Functors***  
 STAGE, MIT, Sep. 2019  
 
 ***Division by 2 on Hyperelliptic Curves***  
