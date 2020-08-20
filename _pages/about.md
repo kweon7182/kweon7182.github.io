@@ -19,4 +19,4 @@ I am a fifth year Ph.D. student in the Department of Mathematics at MIT, advised
 1. [Bounds on the Torsion Subgroup Schemes of Néron-Severi Group Schemes](https://arxiv.org/abs/2008.01908); preprint
 1. [Bounds on the Torsion Subgroups of Néron-Severi Groups](https://arxiv.org/abs/1902.02753); preprint (To be appeared in Transactions of the AMS)
 1. [Overlap of convex polytopes under rigid motion](https://www.sciencedirect.com/science/article/pii/S0925772113000941) (with Hee-Kap Ahn; Siu-Wing Cheng and Juyoung Yon). 
-Comput. Geom. 47 (2014), no. 1, 15–24. 52B55 (52B11)
+Computational Geometry 47 (2014), no. 1, 15–24. 52B55 (52B11)
