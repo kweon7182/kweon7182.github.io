@@ -6,6 +6,16 @@ author_profile: true
 ---
 
 # Research Talks
+
+Bounds on the Torsion Subgroups of N´ eron-Severi Groups 
+Ohio State Number Theory Seminar, Ohio State University, Mar. 2021
+
+Bounds on the Torsion Subgroups of N´ eron-Severi Groups
+AMS Special Session, Spring Eastern Sectional Meeting, Brown University, Mar. 2021
+
+Bounds on the Torsion Subgroups of N´ eron-Severi Groups
+Binghamton Arithmetic Seminar, Binghamton University, Mar. 2021
+
 [***Bounds on the Torsion Subgroups of Néron-Severi Groups***](http://www.kias.re.kr/sub03/sub03_01_05_01.jsp?seqno=PGN1720191216-0002&nowBlock=0&page=7&subject=&mjrcd=&mjrcd2=1&sdate=20191210&edate=&keyField=&keyWord=&list_url=/sub03/sub03_01_05.jsp&slides=)  
 KIAS, Jan. 2020  
 
