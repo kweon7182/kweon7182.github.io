@@ -26,6 +26,9 @@ AMS Special Session, Spring Eastern Sectional Meeting, Tufts University, Mar. 20
 KIAS, Jan. 2020  
 
 # Expository Talks
+***Alterations***  
+STAGE, MIT, Sep. 2020  
+
 ***Formal Groups as Functors***  
 STAGE, MIT, Sep. 2019  
 
