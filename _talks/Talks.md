@@ -7,6 +7,9 @@ author_profile: true
 
 # Research Talks
 
+***Bounds on the Torsion Subgroups of Néron-Severi Groups (expected)***  
+2021 Korean Mathematical Society Annual Meeting, Oct. 2021
+
 ***Bounds on the Torsion Subgroups of Néron-Severi Groups***  
 Ohio State Number Theory Seminar, Ohio State University, Mar. 2021
 
