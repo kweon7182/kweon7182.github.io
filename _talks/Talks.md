@@ -18,10 +18,14 @@ AMS Special Session, Spring Eastern Sectional Meeting, Brown University, Mar. 20
 
 Binghamton Arithmetic Seminar, Binghamton University, Mar. 2021
 
-[comment]: <> [***Bounds on the Torsion Subgroups of Néron-Severi Groups (Canceled Due to COVID-19)***](https://sites.google.com/view/curves-hilb-trop-tufts-2020/home)   
+<!---
+[***Bounds on the Torsion Subgroups of Néron-Severi Groups (Canceled Due to COVID-19)***](https://sites.google.com/view/curves-hilb-trop-tufts-2020/home)   
+-->
 AMS Special Session, Spring Eastern Sectional Meeting, Tufts University, Mar. 2020
 
-[comment]: <> [***Bounds on the Torsion Subgroups of Néron-Severi Groups***](http://www.kias.re.kr/sub03/sub03_01_05_01.jsp?seqno=PGN1720191216-0002&nowBlock=0&page=7&subject=&mjrcd=&mjrcd2=1&sdate=20191210&edate=&keyField=&keyWord=&list_url=/sub03/sub03_01_05.jsp&slides=)  
+<!---
+[***Bounds on the Torsion Subgroups of Néron-Severi Groups***](http://www.kias.re.kr/sub03/sub03_01_05_01.jsp?seqno=PGN1720191216-0002&nowBlock=0&page=7&subject=&mjrcd=&mjrcd2=1&sdate=20191210&edate=&keyField=&keyWord=&list_url=/sub03/sub03_01_05.jsp&slides=)  
+-->
 KIAS, Jan. 2020  
 
 # Expository Talks
