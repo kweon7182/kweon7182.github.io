@@ -7,8 +7,8 @@ author_profile: true
 
 # Research Talks
 
-***Bounds on the Torsion Subgroups of Néron-Severi Groups (expected)***  
-2021 Junior number theory , Dec. 2021
+***Bounds on the Torsion Subgroups of Néron-Severi Groups***  
+2021 Junior number theory , Dec. 2021  (expected)
 
 2021 Korean Mathematical Society Annual Meeting, Oct. 2021
 
