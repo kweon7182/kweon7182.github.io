@@ -6,9 +6,9 @@ author_profile: true
 ---
 
 # Address
-MIT Department of Mathematics  
-182 Memorial Dr., Bldg. 2-341A  
-Cambridge, MA 02142, USA  
+University of Georgia, Department of Mathematics  
+452 Boyd Research and Education Center
+Athens, GA 30602, USA  
 
 # Email
-𝕜𝕨𝕖𝕠𝕟＠𝕞𝕚𝕥｡𝕖𝕕𝕦
+𝕜𝕨𝕖𝕠𝕟＠𝕦𝕘𝕒｡𝕖𝕕𝕦
