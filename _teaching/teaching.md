@@ -7,6 +7,12 @@ author_profile: true
 
 # Teaching
 
+***Precalculus (MATH1113)***  
+University of Georgia, Sprint 2023
+
+***Calculus of Several Variables (18.02)***  
+Recitation Leader, MIT, Spring 2022
+
 ***Calculus (18.01A/18.02A)***  
 Recitation Leader, MIT, Fall 2021
 
