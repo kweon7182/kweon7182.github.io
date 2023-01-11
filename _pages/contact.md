@@ -7,7 +7,7 @@ author_profile: true
 
 # Address
 University of Georgia, Department of Mathematics  
-452 Boyd Research and Education Center
+606 Boyd Research and Education Center
 Athens, GA 30602, USA  
 
 # Email
