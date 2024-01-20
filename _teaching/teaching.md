@@ -6,9 +6,14 @@ author_profile: true
 ---
 
 # Teaching
+***Calculus II for Science and Engineering (MATH2250)***  
+University of Georgia, Spring 2024
+
+***Calculus I for Science and Engineering (MATH2250)***  
+University of Georgia, Fall 2023
 
 ***Precalculus (MATH1113)***  
-University of Georgia, Sprint 2023
+University of Georgia, Spring 2023
 
 ***Calculus of Several Variables (18.02)***  
 Recitation Leader, MIT, Spring 2022
