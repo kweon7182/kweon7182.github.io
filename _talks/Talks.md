@@ -6,9 +6,19 @@ author_profile: true
 ---
 
 # Research Talks
+PAlmetto Number Theory Series XXXVI, Clemson University, Oct. 2023
 
-***Bounds on the Torsion Subgroups of Néron-Severi Groups***  
-2021 Junior number theory , Dec. 2021 
+Number Theory Seminar, University of Georgia, Apr. 2023
+
+Southern Regional Number Theory Conference, Louisiana State University, Mar. 2023
+
+Number Theory Seminar, University of Georgia, Aug. 2022
+
+Korea Institute for Advanced Study, Oct. 2022
+
+POSTECH-PMI Number Theory Seminar, POSTECH, Apr. 2022
+
+Johns Hopkins Junior Number Theory Days, Johns Hopkins University, Dec. 2021 
 
 2021 Korean Mathematical Society Annual Meeting, Oct. 2021
 
