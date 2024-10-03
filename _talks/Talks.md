@@ -6,6 +6,8 @@ author_profile: true
 ---
 
 # Research Talks
+Canadian Conference on Computational Geometry, Brock University, Jul. 2024
+
 PAlmetto Number Theory Series XXXVI, Clemson University, Oct. 2023
 
 Number Theory Seminar, University of Georgia, Apr. 2023
