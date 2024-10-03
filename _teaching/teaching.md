@@ -6,26 +6,32 @@ author_profile: true
 ---
 
 # Teaching
-***Calculus II for Science and Engineering (MATH2250)***  
-University of Georgia, Spring 2024
-
-***Calculus I for Science and Engineering (MATH2250)***  
-University of Georgia, Fall 2023
+***Complex Variables (MATH4150)***  
+Lecturer, University of Georgia, Aug. 2024 - Dec. 2024
 
 ***Precalculus (MATH1113)***  
-University of Georgia, Spring 2023
+Lecturer, University of Georgia, Aug. 2024 - Dec. 2024
 
-***Calculus of Several Variables (18.02)***  
-Recitation Leader, MIT, Spring 2022
+***Calculus II for Science and Engineering (MATH2260)***  
+Lecturer, University of Georgia, Jan. 2024 - Apr. 2024
+
+***Calculus I for Science and Engineering (MATH2250)***  
+Lecturer, University of Georgia, Aug. 2022 - Dec. 2023
+
+***Precalculus (MATH1113)***  
+Lecturer, University of Georgia, Jan. 2022 - May. 2022
+
+***Multivariable Calculus (18.02)***  
+Recitation Leader, Massachusetts Institute of Technology, Feb. 2021 - May. 2021
 
 ***Calculus (18.01A/18.02A)***  
-Recitation Leader, MIT, Fall 2021
+Recitation Leader, Massachusetts Institute of Technology, Sep. 2020 - Dec. 2020
 
 ***Calculus of Several Variables (18.022)***  
-Recitation Leader, MIT, Fall 2019
+Recitation Leader, Massachusetts Institute of Technology, Sep. 2019 - Dec. 2019
 
 ***Differential Equations (MATH200)***  
-Recitation Leader, POSTECH, Spring 2012
+Recitation Leader, Pohang University of Science and Technology, Mar. 2012 - Jun. 2012
 
 ***Complex Variables (MATH310)***  
-Recitation Leader, POSTECH, Spring 2011
+Recitation Leader, Pohang University of Science and Technology, Aug. 2011 - Dec. 2011
