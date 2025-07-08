@@ -5,10 +5,9 @@ permalink: /contact/
 author_profile: true
 ---
 
-# Address
-University of Georgia, Department of Mathematics  
-606 Boyd Research and Education Center
-Athens, GA 30602, USA  
+# Address  
+Department of Mathematical Sciences, Seoul National University  
+Bldg 27, Room 218, 1 Gwanak-ro, Gwanak-gu, Seoul 08826, South Korea
 
-# Email
-𝕜𝕨𝕖𝕠𝕟＠𝕦𝕘𝕒｡𝕖𝕕𝕦
+# Email  
+𝕜𝕨𝕖𝕠𝕟𝟟𝟙𝟠𝟚＠𝕤𝕟𝕦｡𝕒𝕔｡𝕜𝕣
