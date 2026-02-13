@@ -18,11 +18,11 @@ I am a BK Research Fellow at Seoul National University. Previously, I was a Limi
 # Publications
 
 1. On the p-adic Group Cohomology of Finite Group Schemes, in preparation
-1. Pro-algebraic site, preprint
+1. Pro-Algebraic Site, preprint
 1. [Computing Picard Schemes](https://arxiv.org/abs/2601.16505) (with Madhavan Venkatesh), submitted 
-1. [Bounds on torsion in cohomology and an effective version of Deligne's gcd theorem](https://arxiv.org/pdf/2511.00431) (with Madhavan Venkatesh), submitted
+1. [Bounds on Torsion in Cohomology and an Effective Version of Deligne's Gcd Theorem](https://arxiv.org/pdf/2511.00431) (with Madhavan Venkatesh), submitted
 1. [Maximum Overlap Area of Several Convex Polygons Under Translation](https://arxiv.org/abs/2301.02949) (with Honglin Zhu); The 36th Canadian Conference on Computational Geometry (CCCG 2024)
-1. [Maximum overlap area of a convex polyhedron and a convex polygon under translation](https://doi.org/10.4230/LIPIcs.SoCG.2023.61) (with Honglin Zhu); 39th International Symposium on Computational Geometry (SoCG 2023)
+1. [Maximum Overlap Area of a Convex Polyhedron and a Convex Polygon under Translation](https://doi.org/10.4230/LIPIcs.SoCG.2023.61) (with Honglin Zhu); 39th International Symposium on Computational Geometry (SoCG 2023)
 1. [Bounds on the Torsion Subgroup Schemes of Néron-Severi Group Schemes](https://doi.org/10.1016/j.aim.2022.108687); Advances in Mathematics (2022)
 1. [Bounds on the Torsion Subgroups of Néron-Severi Groups](https://www.ams.org/journals/tran/0000-000-00/S0002-9947-2020-08203-8/S0002-9947-2020-08203-8.pdf); Transactions of the AMS (2021).
-1. [Overlap of convex polytopes under rigid motion](https://www.sciencedirect.com/science/article/pii/S0925772113000941) (with Hee-Kap Ahn; Siu-Wing Cheng and Juyoung Yon); Computational Geometry 47, no. 1 (2014): 15-24
+1. [Overlap of Convex Polytopes Under Rigid Motion](https://www.sciencedirect.com/science/article/pii/S0925772113000941) (with Hee-Kap Ahn; Siu-Wing Cheng and Juyoung Yon); Computational Geometry 47, no. 1 (2014): 15-24
