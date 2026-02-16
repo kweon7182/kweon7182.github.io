@@ -18,7 +18,7 @@ I am a BK Research Fellow at Seoul National University. Previously, I was a Limi
 # Publications
 
 1. On the p-adic Group Cohomology of Finite Group Schemes, in preparation
-1. Pro-Algebraic Site, preprint
+1. [Pro-Algebraic Site](https://arxiv.org/abs/2602.12718), preprint
 1. [Computing Picard Schemes](https://arxiv.org/abs/2601.16505) (with Madhavan Venkatesh), submitted 
 1. [Bounds on Torsion in Cohomology and an Effective Version of Deligne's Gcd Theorem](https://arxiv.org/pdf/2511.00431) (with Madhavan Venkatesh), submitted
 1. [Maximum Overlap Area of Several Convex Polygons Under Translation](https://arxiv.org/abs/2301.02949) (with Honglin Zhu); The 36th Canadian Conference on Computational Geometry (CCCG 2024)
