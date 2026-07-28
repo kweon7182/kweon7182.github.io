@@ -1,0 +1,614 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+%\usepackage{times}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+\usepackage{comment}
+%\usepackage{kotex}
+\usepackage[normalem]{ulem}
+
+% Simpler bibsection for CV sections
+% (thanks to natbib for inspiration)
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em} %1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}%
+        {\begin{enumerate}{}{%
+%        {\begin{list}{}{%
+       \setlength{\leftmargin}{\bibhang}%
+       \setlength{\itemindent}{-\leftmargin}%
+       \setlength{\itemsep}{\bibsep}%
+       \setlength{\parsep}{\z@}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{enumerate}\vspace{-.6\baselineskip}}
+%        {\end{list}\vspace{-.6\baselineskip}}
+\makeatother
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=.95in,             % 0.95 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+\usepackage[shortlabels]{enumitem}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+% (optional argument typesets an object right-justified across from name
+%  as well)
+%
+% Usage: \makeheading{name}
+%        OR
+%        \makeheading[right_object]{name}
+%
+% Place at top of document. It should be the first thing.
+% If ``right_object'' is provided in the square-braced optional
+% argument, it will be right justified on the same line as ``name'' at
+% the top of the CV. For example:
+%
+%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+%
+% will put an emphasized ``Curriculum vitae'' at the top of the document
+% as a title. Likewise, a picture could be included:
+%
+%   \makeheading[\includegraphics[height=1.5in]{my_picutre}]{Your Name}
+%
+% the picture will be flush right across from the name.
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+\renewcommand{\section}[1]{\pagebreak[3]%
+    \hyphenpenalty=10000%
+    \vspace{1.3\baselineskip}%
+    \phantomsection\addcontentsline{toc}{section}{#1}%
+    \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
+    \vspace{-\baselineskip}\par}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}\vspace{-.6\baselineskip}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}}
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{Hyuk Jun Kweon}
+
+\section{Contact Information}
+
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table.
+%
+% ALSO: \rcollength is the width of the right column of the table
+%       (adjust it to your liking; default is 1.85in).
+%
+\newlength{\rcollength}\setlength{\rcollength}{1.4in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength-2\tabcolsep}p{\rcollength}@{}}
+%\href{http://www.cse.osu.edu/}%
+%     {Department of Computer Science and Engineering} & \\
+%     \href{http://www.osu.edu/}{The Ohio State University}
+
+
+27-218, Building 27, Seoul National University & +82-10-9982-8055 \\
+1 Gwanak-ro, Gwanak-gu, Seoul 08826, South Korea & \email{kweon7182@snu.ac.kr}\\
+\end{tabular}
+
+%\section{Objective}
+
+%Insert text here if you want to
+%\begin{innerlist}
+%\item More information and auxiliary documents can be found at\\\url{http://www.tedpavlic.com/facjobsearch/}
+%\end{innerlist}
+
+\section{Employment}
+\href{https://math.snu.ac.kr}{\textbf{Seoul National University}}, Seoul, South Korea
+\begin{outerlist}
+\item[] BK Research Fellow \hfill Jun 2025--Present
+\end{outerlist}
+
+\vspace{.1in}
+\href{https://www.math.uga.edu/}{\textbf{University of Georgia}}, Athens, GA, USA
+\begin{outerlist}
+\item[] Limited Term Assistant Professor \hfill Jan 2023--May 2025
+\end{outerlist}
+
+\vspace{.1in}
+\href{http://www.mit.edu}{\textbf{Massachusetts Institute of Technology}}, Cambridge, MA, USA
+\begin{outerlist}
+\item[] Research Specialist Limited (One-year bridge postdoc) \hfill Aug 2021--Jul 2022
+\end{outerlist}
+
+\vspace{.1in}
+\href{https://www.nims.re.kr/eng/}{\textbf{National Institute for Mathematical Sciences}}, Daejeon, South Korea
+\begin{outerlist}
+\item[] \textbf{Technical Research Personnel} \hfill Mar 2015--Apr 2018
+\begin{innerlist}
+\item Alternative military service
+\item Managing a SageMath notebook server %\hfill Mar 2015--Dec 2015
+\item Providing mathematical outreach programs  %\hfill Jan 2016--Apr 2018
+%\item Encouraging people to engage in mathematical activities \\
+%  particularly for underrepresented minorities
+\end{innerlist}
+\end{outerlist}
+
+\section{Education}
+
+\href{http://www.mit.edu}{\textbf{Massachusetts Institute of Technology}}, Cambridge, MA, USA
+\begin{outerlist}
+\item[] Ph.D. in Mathematics \hfill Sep 2018--Jun 2021 \\
+(Prior enrollment before compulsory military service) \hfill Sep 2012--Aug 2014 \\
+Advisor: Bjorn Poonen
+\end{outerlist}
+
+\vspace{.1in}
+\href{http://www.postech.ac.kr}{\textbf{Pohang University of Science and Technology}}, Pohang, South Korea
+\begin{outerlist}
+\item[] B.S. in
+        \href{http://math.postech.ac.kr/}
+        {Mathematics} \hfill Mar 2008--Feb 2012\\
+        B.S. in
+        \href{https://cse.postech.ac.kr/}
+        {Computer Science and Engineering}
+        \begin{innerlist}
+        \item {Double Major}
+        \item {Summa Cum Laude} % (GPA: 4.15/4.30)}
+        \end{innerlist}
+\end{outerlist}
+
+\section{Publications}
+\href{https://arxiv.org/abs/2602.12718}{A Uniform Construction of Cohomology Theories of Varieties via Fundamental Groupoids}, \textit{preprint}\vspace{5pt}
+
+\href{https://arxiv.org/abs/2601.16505}{Computing Picard Schemes} (with Madhavan Venkatesh),
+\textit{submitted}\vspace{5pt}
+
+\href{https://arxiv.org/abs/2511.00431}{Bounds on Torsion in Cohomology and an Effective Version of Deligne's Gcd Theorem} (with Madhavan Venkatesh),
+\textit{to appear in Journal de Th\'eorie des Nombres de Bordeaux}\vspace{5pt}
+
+\href{https://arxiv.org/abs/2301.02949}{Maximum Overlap Area of Several Convex Polygons Under Translation (with Honglin Zhu)}, \textit{The 36th Canadian Conference on Computational Geometry (CCCG 2024)}
+\vspace{5pt}
+
+\href{https://doi.org/10.4230/LIPIcs.SoCG.2023.61}{Maximum Overlap Area of a Convex Polyhedron and a Convex Polygon under Translation} (with Honglin Zhu),
+\textit{The 39th International Symposium on Computational Geometry (SoCG 2023)}
+\vspace{5pt}
+
+\href{https://doi.org/10.1016/j.aim.2022.108687}{Bounds on the Torsion Subgroup Schemes of Néron-Severi Group Schemes, \textit{Advances in Mathematics 409 (2022): 108687.}}
+\vspace{5pt}
+
+\href{https://www.ams.org/journals/tran/0000-000-00/S0002-9947-2020-08203-8/S0002-9947-2020-08203-8.pdf}{Bounds on the Torsion Subgroups of Néron-Severi Groups, \textit{Trans. Amer. Math. Soc. 374 (2021), pp. 351--365.}}
+\vspace{5pt}
+
+\href{https://www.sciencedirect.com/science/article/pii/S0925772113000941}{Overlap of Convex Polytopes Under Rigid Motion} (with Hee-Kap Ahn, Siu-Wing Cheng, and Juyoung Yon), \textit{Computational Geometry} 47, no. 1 (2014): 15--24
+
+%\halfblankline
+
+
+\section{Awards and Honors}
+AMS-Simons Travel Grants \hfill Jul 2023--Jun 2025
+
+\vspace{5pt}
+
+Scholarship for Doctoral Study, Samsung Foundation \hfill Sep 2012--Jun 2021
+
+\vspace{5pt}
+
+Scholarship, STX Foundation \hfill Mar 2011--Feb 2012
+
+\vspace{5pt}
+
+Governmental Scholarship, Korea Student Aid Foundation \hfill Mar 2008--Feb 2011
+
+\vspace{5pt}
+
+% Fellowship with Top Honor (5 times), POSTECH \hfill Mar 2008--Feb 2012
+
+% Silver Award, National Collegiate Mathematics Competition, \hfill Nov 2010 \\
+% the Korean Mathematical Society
+
+% Five Golden Buttons, The Five-Gold-Button Math Competition, \hfill Sep 2008 \\
+% POSTECH
+
+6th Place, ACM-ICPC Korea Regional Programming Contest \hfill Nov 2010
+
+\vspace{5pt}
+
+4th Place, ACM-ICPC Korea Regional Programming Contest \hfill Nov 2009
+
+\vspace{5pt}
+
+5th Place, ACM-ICPC Korea Regional Programming Contest \hfill Nov 2008
+
+\vspace{5pt}
+
+% Top Prize, Programming Contest, POSTECH, Pohang, Korea \hfill May 2009
+
+
+\section{Teaching}
+\textbf{Calculus III for Engineering (MATH2500)} \hfill Jan 2025--May 2025 \\
+Lecturer, University of Georgia\vspace{5pt}
+
+\textbf{Complex Variables (MATH4150)} \hfill Aug 2024--Dec 2024 \\
+Lecturer, University of Georgia\vspace{5pt}
+
+\textbf{Precalculus (MATH1113)} \hfill Aug 2024--Dec 2024 \\
+Lecturer, University of Georgia\vspace{5pt}
+
+\textbf{Calculus II for Science and Engineering (MATH2260)} \hfill Jan 2024--Apr 2024 \\
+Lecturer, University of Georgia\vspace{5pt}
+
+\textbf{Calculus I for Science and Engineering (MATH2250)} \hfill Aug 2022--Dec 2023 \\
+Lecturer, University of Georgia\vspace{5pt}
+
+\textbf{Precalculus (MATH1113)} \hfill Jan 2022--May 2022 \\
+Lecturer, University of Georgia\vspace{5pt}
+
+\textbf{Multivariable Calculus (18.02)} \hfill Feb 2021--May 2021 \\
+Recitation Leader, Massachusetts Institute of Technology\vspace{5pt}
+
+\textbf{Calculus (18.01A/18.02A)} \hfill Sep 2020--Dec 2020 \\
+Recitation Leader, Massachusetts Institute of Technology\vspace{5pt}
+
+\textbf{Calculus of Several Variables (18.022)} \hfill Sep 2019--Dec 2019 \\
+Recitation Leader, Massachusetts Institute of Technology\vspace{5pt}
+
+\textbf{Differential Equations (MATH200)} \hfill Mar 2012--Jun 2012 \\
+Recitation Leader, Pohang University of Science and Technology\vspace{5pt}
+
+\textbf{Complex Variables (MATH310)} \hfill Aug 2011--Dec 2011\\
+Recitation Leader, Pohang University of Science and Technology
+
+
+\section{Research Talks}
+International Conference for the 80th Anniversary of the \hfill Jun 2026\\
+Korean Mathematical Society
+
+\vspace{5pt}
+
+Seminar, Soongsil University \hfill Mar 2026
+
+\vspace{5pt}
+
+KIAS HCMC Algebra Seminar, Korea Institute for Advanced Study \hfill Nov 2025
+
+\vspace{5pt}
+
+POSTECH-PMI Number Theory Seminar, POSTECH \hfill Nov 2025
+
+\vspace{5pt}
+
+Rookies Workshop 2025, Seoul National University \hfill Nov 2025
+
+\vspace{5pt}
+
+QSMS Summer Workshop 2025, Goseong \hfill Aug 2025
+
+\vspace{5pt}
+
+Rookies Pitch, Seoul National University \hfill Jun 2025
+
+\vspace{5pt}
+
+Number Theory Seminar, University of Georgia \hfill May 2025
+
+\vspace{5pt}
+
+Canadian Conference on Computational Geometry, Brock University \hfill Jul 2024
+
+\vspace{5pt}
+
+Palmetto Number Theory Series XXXVI, Clemson University \hfill Oct 2023
+
+\vspace{5pt}
+
+Number Theory Seminar, University of Georgia \hfill Apr 2023
+
+\vspace{5pt}
+
+Southern Regional Number Theory Conference, Louisiana State University \hfill Mar 2023
+
+\vspace{5pt}
+
+Number Theory Seminar, University of Georgia \hfill Aug 2022
+
+\vspace{5pt}
+
+Korea Institute for Advanced Study \hfill Oct 2022
+
+\vspace{5pt}
+
+POSTECH-PMI Number Theory Seminar, POSTECH \hfill Apr 2022
+
+\vspace{5pt}
+
+Johns Hopkins Junior Number Theory Days, Johns Hopkins University \hfill Dec 2021
+
+\vspace{5pt}
+
+
+2021 Korean Mathematical Society Annual Meeting \hfill Oct 2021
+
+\vspace{5pt}
+
+Ohio State Number Theory Seminar, Ohio State University \hfill Mar 2021
+
+\vspace{5pt}
+
+AMS Special Session, Spring Eastern Sectional Meeting, Brown University  \hfill Mar 2021
+
+\vspace{5pt}
+
+Binghamton Arithmetic Seminar, Binghamton University \hfill Mar 2021
+
+\vspace{5pt}
+
+Korea Institute for Advanced Study \hfill Jan 2020
+
+\vspace{5pt}
+
+% \sout{AMS Special Session, Spring Eastern Sectional Meeting, Tufts University} \hfill Mar 2020
+% \\(Canceled due to COVID-19)
+% \vspace{5pt}
+
+\section{Expository Talks} % Expository
+\textbf{Proof of the amplification principle 2} \hfill May 2022 \\
+STAGE, Massachusetts Institute of Technology
+\vspace{5pt}
+
+\textbf{Alterations} \hfill Nov 2020 \\
+STAGE, Massachusetts Institute of Technology
+\vspace{5pt}
+
+\textbf{Formal Groups as Functors} \hfill Sep 2019 \\
+STAGE, Massachusetts Institute of Technology
+\vspace{5pt}
+
+\textbf{Division by 2 on Hyperelliptic Curves} \hfill Dec 2018 \\
+Preprint Seminar, Massachusetts Institute of Technology
+\vspace{5pt}
+
+\textbf{Review of \'Etale Cohomology} \hfill Sep 2018 \\
+STAGE, Massachusetts Institute of Technology
+\vspace{5pt}
+
+\textbf{On the Fary-Milnor Theorem, following the existing literature} \hfill Nov 2010 \\
+SCV Seminar, Pohang University of Science and Technology
+
+% \halfblankline
+
+% \textbf{Co-researcher} \hfill Mar 2011--Dec 2011 \\
+% Geometric Algorithms Lab, Department of Computer Science and Engineering, Pohang University of Science and Technology
+% \begin{innerlist}
+% \item Advisor: Prof. Hee-Kap Ahn
+% \item Conducted research on approximation algorithms for finding a maximal overlap of two convex polyhedra under rigid motions.
+% \end{innerlist}
+
+\section{Academic Service}
+Co-organizer of STAGE \hfill Spring 2022
+\\(Seminar on Topics in Arithmetic, Geometry, Etc.), MIT \vspace{5pt}
+
+Co-organizer of STAGE \hfill Fall 2021
+\\(Seminar on Topics in Arithmetic, Geometry, Etc.), MIT \vspace{5pt}
+
+Co-organizer of STAGE \hfill Fall 2020
+\\(Seminar on Topics in Arithmetic, Geometry, Etc.), MIT
+
+% \section{Activities}
+% \textbf{Member of MARCUS} \hfill Mar 2008--Feb 2012
+% \begin{innerlist}
+% \item MARCUS is the undergraduate math club in POSTECH, and it has one-hour weekly math seminars.
+% \end{innerlist}\newpage
+
+% \textbf{Member of POSCAT} \hfill Apr 2008--Feb 2012
+% \begin{innerlist}
+% \item POSCAT is an academic club studying algorithms in POSTECH. We prepared for several programming contests, and developed artificial intelligence for annual AI competition between POSTECH and KAIST.
+% \end{innerlist}
+
+% \section{Technical \\ Skills}
+% \textbf{Programming Languages}
+% \begin{innerlist}
+% \item C, C++, Python, OCaml
+% \end{innerlist}
+
+% \halfblankline
+
+% \textbf{Mathematical Software}
+% \begin{innerlist}
+% \item Sage, Maple, Mathematica
+% \end{innerlist}
+
+% \halfblankline
+
+% \textbf{Document Preparation System}
+% \begin{innerlist}
+% \item LaTeX
+% \end{innerlist}
+
+% \begin{comment}
+% \end{comment}
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%
