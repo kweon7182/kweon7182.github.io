@@ -19,7 +19,7 @@ I am a BK Research Fellow at Seoul National University. Previously, I was a Limi
 
 1. [A Uniform Construction of Cohomology Theories of Varieties via Fundamental Groupoids](https://arxiv.org/abs/2602.12718), preprint (formerly titled *Pro-Algebraic Site*)
 1. [Computing Picard Schemes](https://arxiv.org/abs/2601.16505) (with Madhavan Venkatesh), submitted 
-1. [Bounds on Torsion in Cohomology and an Effective Version of Deligne's Gcd Theorem](https://arxiv.org/pdf/2511.00431) (with Madhavan Venkatesh), submitted
+1. [Bounds on Torsion in Cohomology and an Effective Version of Deligne's Gcd Theorem](https://arxiv.org/pdf/2511.00431) (with Madhavan Venkatesh), to appear in Journal de Théorie des Nombres de Bordeaux
 1. [Maximum Overlap Area of Several Convex Polygons Under Translation](https://arxiv.org/abs/2301.02949) (with Honglin Zhu); The 36th Canadian Conference on Computational Geometry (CCCG 2024)
 1. [Maximum Overlap Area of a Convex Polyhedron and a Convex Polygon under Translation](https://doi.org/10.4230/LIPIcs.SoCG.2023.61) (with Honglin Zhu); 39th International Symposium on Computational Geometry (SoCG 2023)
 1. [Bounds on the Torsion Subgroup Schemes of Néron-Severi Group Schemes](https://doi.org/10.1016/j.aim.2022.108687); Advances in Mathematics (2022)
