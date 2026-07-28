@@ -19,10 +19,10 @@ Lecturer, University of Georgia, Jan. 2024 - Apr. 2024
 Lecturer, University of Georgia, Aug. 2022 - Dec. 2023
 
 ***Precalculus (MATH1113)***  
-Lecturer, University of Georgia, Jan. 2022 - May. 2022
+Lecturer, University of Georgia, Jan. 2022 - May 2022
 
 ***Multivariable Calculus (18.02)***  
-Recitation Leader, Massachusetts Institute of Technology, Feb. 2021 - May. 2021
+Recitation Leader, Massachusetts Institute of Technology, Feb. 2021 - May 2021
 
 ***Calculus (18.01A/18.02A)***  
 Recitation Leader, Massachusetts Institute of Technology, Sep. 2020 - Dec. 2020

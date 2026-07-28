@@ -6,21 +6,25 @@ author_profile: true
 ---
 
 # Research Talks
-HCMC Algebra seminar, Korea Institute for Advanced Study, Nov. 2025
+International Conference for the 80th Anniversary of the Korean Mathematical Society, Jun. 2026
 
-PMI Number Theory Seminar, Postech, Nov. 2025
+Seminar, Soongsil University, Mar. 2026
+
+KIAS HCMC Algebra Seminar, Korea Institute for Advanced Study, Nov. 2025
+
+POSTECH-PMI Number Theory Seminar, POSTECH, Nov. 2025
 
 Rookies Workshop 2025, Seoul National University, Nov. 2025
 
-QSMS Workshop, Aug. 2025
+QSMS Summer Workshop 2025, Goseong, Aug. 2025
 
 Rookies Pitch, Seoul National University, Jun. 2025
 
-Number Theory Seminar, University of Georgia, May. 2025
+Number Theory Seminar, University of Georgia, May 2025
 
 Canadian Conference on Computational Geometry, Brock University, Jul. 2024
 
-PAlmetto Number Theory Series XXXVI, Clemson University, Oct. 2023
+Palmetto Number Theory Series XXXVI, Clemson University, Oct. 2023
 
 Number Theory Seminar, University of Georgia, Apr. 2023
 
